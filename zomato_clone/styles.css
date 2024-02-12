@@ -378,7 +378,7 @@
 
 .get_the_app .semicontainer .left img
 {
-    width: 40vh;
+    width: 200px;
     object-fit: cover;
     object-position: center;
 }
@@ -498,3 +498,24 @@
     width: 30%;
 }
 
+/* media queries for download app */
+@media only screen and (max-width: 1300px)
+{
+    .get_the_app .semicontainer .left,
+    .get_the_app .semicontainer .right  
+    {
+        flex: 1;   
+    }
+    .get_the_app .semicontainer
+    {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 900px)
+{
+    .get_the_app
+    {
+        padding: 2rem;
+    }
+}
