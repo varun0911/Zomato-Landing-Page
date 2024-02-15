@@ -43,7 +43,6 @@
 {
     height: 25px;
     width: 25px;
-    display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 100%;
@@ -51,23 +50,6 @@
     display: none;
 }
 
-/* For mobile screen width */
-@media only screen and (max-width: 718px)
-{
-    .navbar_menu_container .user_icon
-    {
-        display: flex;
-    }
-    .link
-    {
-        display: none;
-    }
-
-    .hero_section
-    {
-        min-height: 80vh;
-    }
-}
 
 .hero_section_container
 {
@@ -168,11 +150,22 @@
 }
 
 
+
+.main_container
+{
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    gap: 5rem;
+}
+
 /* card container */
 .container
 {
-    margin: 3rem;
-    width: 90%;
+    align-items: center;
+    width: 85%;
 }
 
 .we_offer
@@ -186,7 +179,7 @@
 
 .we_offer_card
 {
-    width: 400px;
+    width: 360px;
     cursor: pointer;
     border-radius: 10px;
     overflow: hidden;
@@ -230,3 +223,433 @@
     font-size: 15px;
 }
 
+/* cities container  */
+.flex_cities
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.flex_cities .city
+{
+    padding: 12px 15px;
+    width: 360px;
+    border: 1px solid rgb(232, 232, 232);
+    border-radius: 8px;
+    box-shadow: rgba(28, 28, 28, 0.08) 0px 1.42623px 2.85246px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.flex_cities .city:hover
+{
+    cursor: pointer;
+}
+
+.flex_cities h2
+{
+    font-weight: 300;
+}
+
+.flex_cities p
+{
+    font-weight: 200;
+}
+
+/* collections container stylings */
+.collections h1
+{
+    font-weight: 600;
+}
+
+.collections .sub_heading_container
+{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sub_heading_container span:nth-child(2)
+{
+    color: #ff7e8b;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.collections_card_container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.collections_card_container .card
+{
+    height: 300px;
+    min-width: 240px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.card1
+{
+    background-image: url('images/collection1.jpg');
+}
+
+.card2
+{
+    background-image: url('images/collection2.jpg');
+}
+
+.card3
+{
+    background-image: url('images/collection3.jpg');
+}
+
+.card4
+{
+    background-image: url('images/collection4.jpg');
+}
+
+.overlay
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.9) 0%,
+        rgba(0, 0, 0, 0.05) 50%,
+        rgba(0, 0, 0, 0.9) 85%,
+    );
+    z-index: 1;
+}
+
+.collections_card_container .card .content 
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    padding: 12px 16px;
+    font-size: 0.9rem;
+    z-index: 6;
+}
+
+.content h4
+{
+    font-weight: 400;
+    letter-spacing: 0.3rem;
+}
+
+.get_the_app
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFBF7;
+}
+
+.get_the_app .semicontainer
+{
+    display: flex;
+    width: 66%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 6rem 3rem;
+}
+
+.get_the_app .semicontainer .left
+{
+    flex: 2;
+}
+
+.get_the_app .semicontainer .left img
+{
+    width: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.get_the_app .semicontainer .right
+{
+    flex: 3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.right h1
+{
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+.right p
+{
+    font-weight: 200;
+    color: #363636;
+}
+
+.right .radio_button_container
+{   
+    display: flex;
+    gap: 3rem;
+}
+
+.radio_button_container div
+{   
+    display: flex;
+    gap: 0.6rem;
+}
+
+.radio_button_container input
+{
+    width: 20px;
+    height: 20px;
+    accent-color: rgb(239, 79, 95);
+}
+
+.radio_button_container input:hover
+{
+    width: 20px;
+    height: 20px;
+    accent-color: rgb(239, 79, 95);
+    cursor: pointer;
+}
+
+.radio_button_container label
+{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.right .input_container
+{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.input_container button, .input_container input
+{
+    padding: 10px 18px;
+}
+
+.input_container input
+{
+    flex: auto;
+    border: 1px solid rgb(181, 181, 181);
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.input_container input:focus
+{
+    border: 2px solid rgb(239, 79, 95);
+}
+
+.input_container button
+{
+    color: white;
+    border: none;
+    border-radius:5px;
+    outline: none;
+    background-color: rgb(239, 79, 95);
+    font-size: 1rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.right .download_app_container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.right .download_app_container div
+{
+    display: flex;
+    gap: 1.2rem;
+}
+
+.right .download_app_container h5
+{
+    font-weight: 300;
+    color: #9C9C9C;
+}
+
+.right .download_app_container img
+{
+    width: 30%;
+}
+
+/* media queries for download app */
+@media only screen and (max-width: 1300px)
+{
+    .get_the_app .semicontainer .left,
+    .get_the_app .semicontainer .right  
+    {
+        flex: 1;   
+    }
+    .get_the_app .semicontainer
+    {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 900px)
+{
+    .get_the_app
+    {
+        padding: 2rem;
+    }
+    .get_the_app .semicontainer
+    {
+        width: 95%;
+        flex-direction: column;
+    }
+}
+
+
+/* Explore section */
+.explore_options
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.explore_section h1
+{
+    font-size: 2rem;
+    font-weight: 400;
+    color: #363636;
+}
+
+.explore_options .explore_cards
+{
+    padding: 20px;
+    border: 1px solid #dddee4;
+    border-radius: 8px;
+}
+
+.explore_section .explore_options h3
+{
+    font-weight: 400;
+    color: #363636;
+}
+
+/* Footer styling */
+
+.footer_section1
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.footer_section1 .inner_section
+{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.inner_section button
+{
+    border: 1px solid #9C9C9C;
+    border-radius: 5px;
+    padding: 5px 18px 5px 18px;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #363636;
+}
+
+.inner_section button:hover 
+{
+    cursor: pointer;
+}
+
+.footer_section1 img
+{
+    width: 150px;
+}
+
+/* Styling footer section */
+
+.navigation_container
+{
+    display:grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    padding: 3rem 0;
+    margin: auto;
+}   
+
+.navigation_container .link_container
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.link_container a
+{
+    text-decoration: none;
+    color: #696969;
+    font-size: 15px;
+}
+
+.footer_link:hover
+{
+    color: black;
+}
+
+.link_container h5
+{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.social_links button
+{
+    background-color: black;
+    height: 28px;
+    width: 28px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+
+.social_links i
+{
+    color: white;
+}
+
+.copyright p
+{
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+.downloads img 
+{
+    width: 130px;
+}
