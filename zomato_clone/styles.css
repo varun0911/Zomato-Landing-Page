@@ -149,7 +149,43 @@
     }
 }
 
+@media only screen and (max-width: 329px)
+{
+    .navbar_menu_container .user_icon
+    {
+        display: flex;
+    }
+    .link
+    {
+        display: none;
+    }
 
+    .hero_section
+    {
+        min-height: 80vh;
+    }
+
+    .hero_section_input_container
+    {
+        background-color: transparent;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .input_container_location,
+    .input_container_search
+    {
+        padding: 16px;
+        border-radius: 10px;
+        width: 98%;
+    }
+
+    .hero_section_title
+    {
+        font-size: 22px;
+        width: 95%;
+    }
+}
 
 .main_container
 {
@@ -652,4 +688,12 @@
 .downloads img 
 {
     width: 130px;
+}
+
+@media only screen and (max-width: 900px)
+{
+    .navigation_container
+    {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
